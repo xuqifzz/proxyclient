@@ -1,0 +1,7 @@
+使用方法:
+docker pull xuqifzz/clientproxy
+然后准备好你的ss服务器地址,端口,密码,分别替换掉下面的ssserver,ssport,sspsw
+docker run -d -p 1080:1080 -p 8118:8118  --env SS_SERVER=ssserver --env SS_PORT=ssport --env SS_PSW=sspsw xuqifzz/proxyclient
+
+其中1080端口是socket5代理
+8118端口是http代理
